@@ -1,0 +1,455 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "ASTM F1862 Tester"
+Date "2020-05-19"
+Rev "0.1"
+Comp ""
+Comment1 "Author: Kendrick Shaw"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:PN2222A Q1
+U 1 1 5EC44F97
+P 4750 3150
+F 0 "Q1" V 4991 3150 60  0000 C CNN
+F 1 "PN2222A" V 5097 3150 60  0000 C CNN
+F 2 "digikey-footprints:TO-92-3" H 4950 3350 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=PN2221-2222A.PDF" H 4950 3450 60  0001 L CNN
+F 4 "PN2222ACS-ND" H 4950 3550 60  0001 L CNN "Digi-Key_PN"
+F 5 "PN2222A" H 4950 3650 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4950 3750 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 4950 3850 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=PN2221-2222A.PDF" H 4950 3950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/PN2222A/PN2222ACS-ND/4806937" H 4950 4050 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-92" H 4950 4150 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 4950 4250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4950 4350 60  0001 L CNN "Status"
+	1    4750 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L APBPressureSensor:APB_SPI_Pressure_Sensor U1
+U 1 1 5EC4696A
+P 4700 5250
+F 0 "U1" H 4700 5450 50  0000 C CNN
+F 1 "ABPDRRV600MGSA3" H 4700 5050 50  0000 C CNN
+F 2 "" H 4700 5250 50  0001 C CNN
+F 3 "" H 4700 5250 50  0001 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPL_Connector:CONN-POWER-JACK-2.1MM_DC-005_ J1
+U 1 1 5EC48421
+P 1400 1650
+F 0 "J1" H 1383 1954 45  0000 C CNN
+F 1 "POWER-JACK-2.1MM" H 1400 1850 45  0000 C CNN
+F 2 "" H 1400 1650 50  0001 C CNN
+F 3 "" H 1400 1650 50  0001 C CNN
+F 4 "DC-005" H 1430 1800 20  0001 C CNN "MPN"
+F 5 "320120003" H 1430 1800 20  0001 C CNN "SKU"
+	1    1400 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1650 1650
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5EC4CFCF
+P 1850 1500
+F 0 "#FLG01" H 1850 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1673 50  0000 C CNN
+F 2 "" H 1850 1500 50  0001 C CNN
+F 3 "~" H 1850 1500 50  0001 C CNN
+	1    1850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5EC4D3FB
+P 1850 1700
+F 0 "#FLG02" H 1850 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 2050 1700 50  0000 C CNN
+F 2 "" H 1850 1700 50  0001 C CNN
+F 3 "~" H 1850 1700 50  0001 C CNN
+	1    1850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 5EC4D8E1
+P 2150 1500
+F 0 "#PWR02" H 2150 1350 50  0001 C CNN
+F 1 "+12V" H 2165 1673 50  0000 C CNN
+F 2 "" H 2150 1500 50  0001 C CNN
+F 3 "" H 2150 1500 50  0001 C CNN
+	1    2150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1750 1850 1750
+Wire Wire Line
+	1850 1750 1850 1700
+$Comp
+L power:GND #PWR01
+U 1 1 5EC509C7
+P 1850 1800
+F 0 "#PWR01" H 1850 1550 50  0001 C CNN
+F 1 "GND" H 1855 1627 50  0000 C CNN
+F 2 "" H 1850 1800 50  0001 C CNN
+F 3 "" H 1850 1800 50  0001 C CNN
+	1    1850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1800 1850 1750
+Connection ~ 1850 1750
+Wire Wire Line
+	1650 1550 1850 1550
+Wire Wire Line
+	1850 1550 1850 1500
+Wire Wire Line
+	1850 1550 2150 1550
+Wire Wire Line
+	2150 1550 2150 1500
+Connection ~ 1850 1550
+NoConn ~ 3200 3650
+NoConn ~ 2900 3650
+NoConn ~ 2600 4050
+NoConn ~ 2600 4250
+NoConn ~ 3600 4050
+NoConn ~ 3600 4150
+NoConn ~ 3600 4350
+NoConn ~ 3600 4450
+NoConn ~ 3600 4550
+NoConn ~ 3600 4650
+NoConn ~ 3600 4850
+NoConn ~ 3600 4950
+NoConn ~ 3600 5050
+NoConn ~ 3600 5150
+NoConn ~ 2600 4450
+NoConn ~ 2600 4650
+NoConn ~ 2600 4750
+NoConn ~ 2600 4850
+NoConn ~ 2600 4950
+NoConn ~ 2600 5050
+NoConn ~ 2600 5150
+NoConn ~ 2600 5350
+NoConn ~ 2600 5450
+$Comp
+L power:GND #PWR04
+U 1 1 5EC563BF
+P 3150 5900
+F 0 "#PWR04" H 3150 5650 50  0001 C CNN
+F 1 "GND" H 3155 5727 50  0000 C CNN
+F 2 "" H 3150 5900 50  0001 C CNN
+F 3 "" H 3150 5900 50  0001 C CNN
+	1    3150 5900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5750 3200 5850
+Wire Wire Line
+	3200 5850 3150 5850
+Wire Wire Line
+	3000 5850 3000 5750
+Wire Wire Line
+	3100 5750 3100 5850
+Connection ~ 3100 5850
+Wire Wire Line
+	3100 5850 3000 5850
+Wire Wire Line
+	3150 5850 3150 5900
+Connection ~ 3150 5850
+Wire Wire Line
+	3150 5850 3100 5850
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 5EC442E2
+P 3100 4650
+F 0 "A1" H 2750 5650 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 3650 3550 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 3250 3600 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 2900 5700 50  0001 C CNN
+	1    3100 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5250 4350 5250
+$Comp
+L Device:R R1
+U 1 1 5EC61CC3
+P 3850 5350
+F 0 "R1" V 4050 5350 50  0000 C CNN
+F 1 "220" V 3950 5350 50  0000 C CNN
+F 2 "" V 3780 5350 50  0001 C CNN
+F 3 "~" H 3850 5350 50  0001 C CNN
+	1    3850 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 5350 3700 5350
+Wire Wire Line
+	4000 5350 4100 5350
+Wire Wire Line
+	4100 5350 4100 5500
+Connection ~ 4100 5350
+Wire Wire Line
+	4100 5350 4350 5350
+$Comp
+L power:GND #PWR05
+U 1 1 5EC66541
+P 4100 5900
+F 0 "#PWR05" H 4100 5650 50  0001 C CNN
+F 1 "GND" H 4105 5727 50  0000 C CNN
+F 2 "" H 4100 5900 50  0001 C CNN
+F 3 "" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5900 4100 5800
+$Comp
+L Device:R R6
+U 1 1 5EC66F2B
+P 5550 5350
+F 0 "R6" V 5750 5350 50  0000 C CNN
+F 1 "220" V 5650 5350 50  0000 C CNN
+F 2 "" V 5480 5350 50  0001 C CNN
+F 3 "~" H 5550 5350 50  0001 C CNN
+	1    5550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5EC674FD
+P 5250 5650
+F 0 "R5" H 5320 5696 50  0000 L CNN
+F 1 "330" H 5320 5605 50  0000 L CNN
+F 2 "" V 5180 5650 50  0001 C CNN
+F 3 "~" H 5250 5650 50  0001 C CNN
+	1    5250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5EC67FE2
+P 3000 3550
+F 0 "#PWR03" H 3000 3400 50  0001 C CNN
+F 1 "+3V3" H 3015 3723 50  0000 C CNN
+F 2 "" H 3000 3550 50  0001 C CNN
+F 3 "" H 3000 3550 50  0001 C CNN
+	1    3000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3550 3000 3650
+$Comp
+L power:+3V3 #PWR08
+U 1 1 5EC68A88
+P 5200 5250
+F 0 "#PWR08" H 5200 5100 50  0001 C CNN
+F 1 "+3V3" H 5215 5423 50  0000 C CNN
+F 2 "" H 5200 5250 50  0001 C CNN
+F 3 "" H 5200 5250 50  0001 C CNN
+	1    5200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5250 5200 5250
+$Comp
+L power:GND #PWR07
+U 1 1 5EC72D3B
+P 5200 4750
+F 0 "#PWR07" H 5200 4500 50  0001 C CNN
+F 1 "GND" H 5205 4577 50  0000 C CNN
+F 2 "" H 5200 4750 50  0001 C CNN
+F 3 "" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5150 5050 4750
+Wire Wire Line
+	5050 4750 5200 4750
+$Comp
+L power:GND #PWR09
+U 1 1 5EC73E2B
+P 5250 5900
+F 0 "#PWR09" H 5250 5650 50  0001 C CNN
+F 1 "GND" H 5255 5727 50  0000 C CNN
+F 2 "" H 5250 5900 50  0001 C CNN
+F 3 "" H 5250 5900 50  0001 C CNN
+	1    5250 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5800 5250 5900
+Wire Wire Line
+	5050 5350 5250 5350
+Wire Wire Line
+	5250 5350 5250 5500
+Connection ~ 5250 5350
+Wire Wire Line
+	5250 5350 5400 5350
+Wire Wire Line
+	3600 4250 5900 4250
+Wire Wire Line
+	5900 4250 5900 5350
+Wire Wire Line
+	5900 5350 5700 5350
+$Comp
+L Device:R R2
+U 1 1 5EC7CC04
+P 4100 5650
+F 0 "R2" H 4170 5696 50  0000 L CNN
+F 1 "330" H 4170 5605 50  0000 L CNN
+F 2 "" V 4030 5650 50  0001 C CNN
+F 3 "~" H 4100 5650 50  0001 C CNN
+	1    4100 5650
+	1    0    0    -1  
+$EndComp
+Text Notes 4550 5650 0    50   ~ 0
+Pressure\nSensor
+Text Notes 1450 1150 0    50   ~ 0
+12V Power Input
+$Comp
+L pspice:DIODE D1
+U 1 1 5EC874EB
+P 6600 2950
+F 0 "D1" V 6646 2822 50  0000 R CNN
+F 1 "DIODE" V 6555 2822 50  0000 R CNN
+F 2 "" H 6600 2950 50  0001 C CNN
+F 3 "~" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5EC89022
+P 7350 3250
+F 0 "J2" H 7322 3132 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7322 3223 50  0000 R CNN
+F 2 "" H 7350 3250 50  0001 C CNN
+F 3 "~" H 7350 3250 50  0001 C CNN
+	1    7350 3250
+	-1   0    0    1   
+$EndComp
+Text Notes 7150 2950 0    50   ~ 0
+Connector to solenoid valve
+Text Notes 6400 2600 0    50   ~ 0
+Flyback diode
+$Comp
+L power:+12V #PWR010
+U 1 1 5EC952EA
+P 6100 2650
+F 0 "#PWR010" H 6100 2500 50  0001 C CNN
+F 1 "+12V" H 6115 2823 50  0000 C CNN
+F 2 "" H 6100 2650 50  0001 C CNN
+F 3 "" H 6100 2650 50  0001 C CNN
+	1    6100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2650 6100 2700
+Wire Wire Line
+	6100 2700 6600 2700
+Wire Wire Line
+	6600 2700 6600 2750
+Wire Wire Line
+	6600 2700 7000 2700
+Connection ~ 6600 2700
+Wire Wire Line
+	7150 3150 7000 3150
+Wire Wire Line
+	7000 3150 7000 2700
+Wire Wire Line
+	7150 3250 6600 3250
+$Comp
+L power:GND #PWR06
+U 1 1 5ECAE537
+P 4450 3400
+F 0 "#PWR06" H 4450 3150 50  0001 C CNN
+F 1 "GND" H 4455 3227 50  0000 C CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3250 4450 3250
+Wire Wire Line
+	4450 3250 4450 3400
+Wire Wire Line
+	6600 3150 6600 3250
+Connection ~ 6600 3250
+Wire Wire Line
+	6600 3250 4950 3250
+$Comp
+L Device:R R4
+U 1 1 5ECCDF88
+P 5100 2700
+F 0 "R4" V 4893 2700 50  0000 C CNN
+F 1 "1k" V 4984 2700 50  0000 C CNN
+F 2 "" V 5030 2700 50  0001 C CNN
+F 3 "~" H 5100 2700 50  0001 C CNN
+	1    5100 2700
+	0    1    1    0   
+$EndComp
+Text Notes 5300 2850 0    50   ~ 0
+Manual valve actuation
+$Comp
+L dk_Tactile-Switches:B3U-1000P S1
+U 1 1 5ECC90E7
+P 5700 2700
+F 0 "S1" H 5700 2900 60  0000 C CNN
+F 1 "button" H 5700 2500 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_SMD_B3U-1000P" H 5900 2900 60  0001 L CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 5900 3000 60  0001 L CNN
+F 4 "SW1020CT-ND" H 5900 3100 60  0001 L CNN "Digi-Key_PN"
+F 5 "B3U-1000P" H 5900 3200 60  0001 L CNN "MPN"
+F 6 "Switches" H 5900 3300 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 5900 3400 60  0001 L CNN "Family"
+F 8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 5900 3500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 5900 3600 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 12V" H 5900 3700 60  0001 L CNN "Description"
+F 11 "Omron Electronics Inc-EMC Div" H 5900 3800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5900 3900 60  0001 L CNN "Status"
+	1    5700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2700 5900 2700
+Connection ~ 6100 2700
+Wire Wire Line
+	5500 2700 5250 2700
+$Comp
+L Device:R R3
+U 1 1 5ECE4147
+P 4350 2700
+F 0 "R3" V 4143 2700 50  0000 C CNN
+F 1 "1k" V 4234 2700 50  0000 C CNN
+F 2 "" V 4280 2700 50  0001 C CNN
+F 3 "~" H 4350 2700 50  0001 C CNN
+	1    4350 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4750 3950 4750
+Wire Wire Line
+	3950 4750 3950 2700
+Wire Wire Line
+	3950 2700 4200 2700
+Wire Wire Line
+	4500 2700 4750 2700
+Wire Wire Line
+	4750 2700 4750 2950
+Connection ~ 4750 2700
+Wire Wire Line
+	4750 2700 4950 2700
+$EndSCHEMATC

@@ -1,0 +1,282 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# APBPressureSensor_APB_SPI_Pressure_Sensor
+#
+DEF APBPressureSensor_APB_SPI_Pressure_Sensor U 0 40 Y Y 1 F N
+F0 "U" 0 -250 50 H V C CNN
+F1 "APBPressureSensor_APB_SPI_Pressure_Sensor" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 150 250 -150 0 1 0 N
+X GND 1 350 100 100 L 50 50 1 1 W
+X Vcc 2 350 0 100 L 50 50 1 1 W
+X SS 3 350 -100 100 L 50 50 1 1 I
+X NC 4 -350 100 100 R 50 50 1 1 N
+X MISO 5 -350 0 100 R 50 50 1 1 T
+X SCLK 6 -350 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MCU_Module_Arduino_UNO_R3
+#
+DEF MCU_Module_Arduino_UNO_R3 A 0 20 Y Y 1 F N
+F0 "A" -200 1050 50 H V R CNN
+F1 "MCU_Module_Arduino_UNO_R3" -200 950 50 H V R CNN
+F2 "Module:Arduino_UNO_R3" 150 -1050 50 H I L CNN
+F3 "" -200 1050 50 H I C CNN
+$FPLIST
+ Arduino*UNO*R3*
+$ENDFPLIST
+DRAW
+S -400 900 400 -1000 0 1 10 f
+X NC 1 -500 -800 100 R 50 50 1 1 N N
+X A1 10 500 -100 100 L 50 50 1 1 B
+X A2 11 500 -200 100 L 50 50 1 1 B
+X A3 12 500 -300 100 L 50 50 1 1 B
+X A4/SDA 13 500 -400 100 L 50 50 1 1 B
+X A5/SCL 14 500 -500 100 L 50 50 1 1 B
+X D0/RX 15 -500 600 100 R 50 50 1 1 B
+X D1/TX 16 -500 500 100 R 50 50 1 1 B
+X D2 17 -500 400 100 R 50 50 1 1 B
+X D3 18 -500 300 100 R 50 50 1 1 B
+X D4 19 -500 200 100 R 50 50 1 1 B
+X IOREF 2 500 400 100 L 50 50 1 1 O
+X D5 20 -500 100 100 R 50 50 1 1 B
+X D6 21 -500 0 100 R 50 50 1 1 B
+X D7 22 -500 -100 100 R 50 50 1 1 B
+X D8 23 -500 -200 100 R 50 50 1 1 B
+X D9 24 -500 -300 100 R 50 50 1 1 B
+X D10 25 -500 -400 100 R 50 50 1 1 B
+X D11 26 -500 -500 100 R 50 50 1 1 B
+X D12 27 -500 -600 100 R 50 50 1 1 B
+X D13 28 -500 -700 100 R 50 50 1 1 B
+X GND 29 -100 -1100 100 U 50 50 1 1 W
+X RESET 3 500 600 100 L 50 50 1 1 I
+X AREF 30 500 200 100 L 50 50 1 1 I
+X SDA 31 500 -700 100 L 50 50 1 1 B
+X SCL 32 500 -800 100 L 50 50 1 1 B
+X 3V3 4 100 1000 100 D 50 50 1 1 w
+X +5V 5 200 1000 100 D 50 50 1 1 w
+X GND 6 0 -1100 100 U 50 50 1 1 W
+X GND 7 100 -1100 100 U 50 50 1 1 W
+X VIN 8 -100 1000 100 D 50 50 1 1 W
+X A0 9 500 0 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# OPL_Connector_CONN-POWER-JACK-2.1MM_DC-005_
+#
+DEF OPL_Connector_CONN-POWER-JACK-2.1MM_DC-005_ J 0 40 N N 1 L N
+F0 "J" -200 200 45 H V L BNN
+F1 "OPL_Connector_CONN-POWER-JACK-2.1MM_DC-005_" 50 200 45 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "DC-005" 30 150 20 H I C CNN "MPN"
+F5 "320120003" 30 150 20 H I C CNN "SKU"
+$FPLIST
+ *DCJ3P-14.2X11.0X9.0MM*
+$ENDFPLIST
+DRAW
+A -30 100 20 901 1799 1 1 0 N -30 120 -50 100
+A -30 100 20 -1799 -901 1 1 0 N -50 100 -30 80
+T 0 -231 95 40 0 1 0 + Normal 0 C C
+T 0 -231 -105 40 0 1 0 - Normal 0 C C
+T 0 -254 -4 32 0 1 0 CDN Normal 0 C C
+P 2 1 0 0 -150 -150 -150 150 N
+P 2 1 0 0 -150 150 150 150 N
+P 2 1 0 0 -30 80 40 80 N
+P 2 1 0 0 -25 -75 -50 -100 N
+P 2 1 0 0 0 -100 -25 -75 N
+P 2 1 0 0 40 75 50 75 N
+P 2 1 0 0 40 80 40 75 N
+P 2 1 0 0 40 120 -30 120 N
+P 2 1 0 0 40 120 40 80 N
+P 2 1 0 0 40 125 40 120 N
+P 2 1 0 0 50 -100 40 -75 N
+P 2 1 0 0 50 -100 60 -75 N
+P 2 1 0 0 50 0 50 -100 N
+P 2 1 0 0 50 75 50 100 N
+P 2 1 0 0 50 100 50 125 N
+P 2 1 0 0 50 125 40 125 N
+P 2 1 0 0 150 -150 -150 -150 N
+P 2 1 0 0 150 -100 0 -100 N
+P 2 1 0 0 150 0 50 0 N
+P 2 1 0 0 150 100 50 100 N
+P 2 1 0 0 150 150 150 -150 N
+X + 1 250 100 100 L 40 40 1 1 B
+X - 2 250 -100 100 L 40 40 1 1 B
+X CDN 3 250 0 100 L 40 40 1 1 B
+ENDDRAW
+ENDDEF
+#
+# dk_Tactile-Switches_B3U-1000P
+#
+DEF dk_Tactile-Switches_B3U-1000P S 0 40 Y Y 1 F N
+F0 "S" 0 160 60 H V C CNN
+F1 "dk_Tactile-Switches_B3U-1000P" 0 -100 60 H V C CNN
+F2 "digikey-footprints:Switch_Tactile_SMD_B3U-1000P" 200 200 60 H I L CNN
+F3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" 200 300 60 H I L CNN
+F4 "SW1020CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "B3U-1000P" 200 500 60 H I L CNN "MPN"
+F6 "Switches" 200 600 60 H I L CNN "Category"
+F7 "Tactile Switches" 200 700 60 H I L CNN "Family"
+F8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SWITCH TACTILE SPST-NO 0.05A 12V" 200 1000 60 H I L CNN "Description"
+F11 "Omron Electronics Inc-EMC Div" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -60 0 10 0 1 0 N
+C 60 0 10 0 1 0 N
+P 2 0 1 0 -100 0 -70 0 N
+P 2 0 1 0 -70 50 70 50 N
+P 2 0 1 0 -40 110 40 110 N
+P 2 0 1 0 0 50 0 110 N
+P 2 0 1 0 100 0 70 0 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single_PN2222A
+#
+DEF dk_Transistors-Bipolar-BJT-Single_PN2222A Q 0 0 Y Y 1 F N
+F0 "Q" -126 166 60 H V L CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_PN2222A" 206 0 60 V V C CNN
+F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=PN2221-2222A.PDF" 200 300 60 H I L CNN
+F4 "PN2222ACS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PN2222A" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=PN2221-2222A.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/central-semiconductor-corp/PN2222A/PN2222ACS-ND/4806937" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 0.8A TO-92" 200 1000 60 H I L CNN "Description"
+F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 128 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
+X E 1 100 -200 100 U 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 I
+X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# pspice_DIODE
+#
+DEF pspice_DIODE D 0 40 Y N 1 F N
+F0 "D" 0 150 50 H V C CNN
+F1 "pspice_DIODE" 0 -175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 75 100 75 -100 N
+P 3 0 1 0 -75 100 -75 -100 75 0 F
+X K 1 -200 0 150 R 50 50 1 1 I
+X A 2 200 0 150 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

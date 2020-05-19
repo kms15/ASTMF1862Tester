@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name APBPressureSensor)(type Legacy)(uri ${KIPRJMOD}/APBPressureSensor.lib)(options "")(descr ""))
+)

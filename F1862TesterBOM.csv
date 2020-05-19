@@ -1,0 +1,36 @@
+Line	Count	Pack Count	Source	Part Number	Description	Price Each	Price
+1	1	1	McMaster Carr	5001T35	Miniature Solenoid On/Off Valve 10-32 UNF Female, 12V DC, 0.07 Flow Coefficient	82.63	82.63
+2	1	50	McMaster Carr	75165A553	"Stainless Steel Dispensing Needle with Luer Lock Connection 1/2"" Needle Length, 19 Gauge"	12.18	12.18
+3	1	1	McMaster Carr	7095T12	Heavy Duty Hand-Pump Sprayer, 1 Gallon Capacity 	59.05	59.05
+4	2	10	McMaster Carr	5121K331	"Barbed Fitting for Use with Chemicals Adapter for 1/8"" Tube ID x 10-32 Thread Male Pipe"	4.10	4.10
+5	1	1	McMaster Carr	5231K321	"Soft PVC Clear Tubing, 1/8"" ID, 1/4"" OD, 25 ft. Length "	7.00	7.00
+6	1	1	McMaster Carr	5231K948	"Soft PVC Clear Tubing, 1/8"" ID, 3/16"" OD, 25 ft. Length "	4.50	4.50
+7	1	10	McMaster Carr	51525K273	"Plastic Quick-Turn Tube Coupling Plugs, for 1/8"" Barbed Tube ID, Polycarbonate"	5.05	5.05
+8	1	10	McMaster Carr	5116K146	"Plastic Barbed Tube Fitting for Food and Beverage Inline Tee Reducer, for 1/8"" x 1/16"" Tube ID"	6.89	6.89
+9	1	1	McMaster Carr	3184K5	"HI-Temp Abrasion-Rst Soft Silicone Tubing for Food, Beverage, and Dairy, 1/8"" ID, 1/4"" OD, 10 ft. Length "	9.60	9.60
+10	1	1	McMaster Carr	5670K41	"Stainless Steel Barbed Tube Fitting for Food and Beverage for Food and Beverage, Reducer, for 3/8"" x 1/8"" Tube ID"	3.53	3.53
+11	1	1	McMaster Carr	3184K8	"Crush-Resistant Silicone Rubber Tubing for Food, Beverage, and Dairy, 1/16"" ID, 3/16"" OD, 25 ft. Length "	15.25	15.25
+12	1	10	McMaster Carr	5116K183	"Plastic Barbed Tube Fitting for Food and Beverage Polypropylene Tee Connector for 1/16"" Tube ID"	6.06	6.06
+13	1	1	Mouser	713-102990189	Arduino Uno	25.44	25.44
+14	2	1	Mouser	791-RC1/4-221JB	220 Ohm Resistor, Carbon Composition 1/4 Watt 5%	0.35	0.70
+15	2	1	Mouser	791-RC1/4-331JB	330 Ohm Resistor, Carbon Composition 1/4 Watt 5%	0.35	0.70
+16	2	1	Mouser	791-RC1/4-102JB 	1k Ohm Resistor, Carbon Composition 1/4 Watt 5%	0.36	0.72
+17	1	1	Mouser	610-MPS8098	NPN Bipolar Transistor - BJT 60Vcbo 60Vceo 6.0Vebo 500mA 625mW 	0.44	0.44
+18	1	1	Mouser	709-GST60A12-P1J	AC Power Adapter, 12 Volt DC, 2.1 mm x 5.5 mm plug	19.30	19.30
+19	1	1	Mouser	552-AC30UNA-R 	AC Power Cord	4.10	4.10
+20	1	1	Mouser	785-ABPDRRV600MGSA3	Honeywell ABP 60 kPa pressure sensor	13.13	13.13
+21	1	1	Mouser	583-1N4151-B	Diode, General Purpose	0.04	0.04
+22	1	1	Mouser	506-FSM4JH	Tactile switch	0.10	0.10
+23	1	1	Mouser	 992-CON-SOCJ-2155 	DC Power Connectors Power Jack/Connector 2.1mm x 5.5mm	1.00	1.00
+24	1	1	Mouser	424-240-131	Half Breadboard	4.99	4.99
+25	10	40	Mouser	854-ZW-MM-10	Jumper wires	4.43	4.43
+26	10	6	Amazon	B00G2DNT4I	150 mm MakerBeam	9.28	18.56
+27	1	8	Amazon	B00G2DNTLQ	200 mm Makerbeam	16.66	16.66
+28	6	24	Amazon	B00G2DNV0U	MakerBeam 90 degree brackets	18.84	18.84
+29	4	12	Amazon	B00OI6ZBQA	MakerBeam T brackets	6.99	6.99
+30	52	250	Amazon	B00G2DNW3G	MakerBeam M3 bolts with square head, 6mm 	15.30	15.30
+31	52	100	Amazon	B071NLDW56	M3 nuts	5.59	5.59
+32	4	100	Amazon	B07P6JDW9L	Self-locking cable ties	3.99	3.99
+33	1	1	Amazon	B07CMPP1BT	Scale, 5000 g max, 0.01 g resolution	115.00	115.00
+34	1	1	Amazon	B01B3U62C0	Disposable Deli container	11.73	11.73
+	1				Disposable Hinged Salad Container		
